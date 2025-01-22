@@ -2,22 +2,27 @@ package edu.saul.hernandez.ACTIVIDADES.retos;
 
 import java.util.Scanner;
 public class reto1 {
-        public static void main(String[] args) {
-            try (Scanner scanner = new Scanner(System.in)) {
-                System.out.print("Ingresa un texto: ");
-                String texto = scanner.nextLine();
-      
-                String textoInvertido = invertirTexto(texto);
-                System.out.println("Texto invertido: " + textoInvertido);
+
+     public static void main(String[] args) {
+     try (Scanner scanner = new Scanner(System.in)) {
+                System.out.print("Ingresa una palabra para invertir: ");
+                String palabra = scanner.nextLine();
+
+                String palabraInvertida = invertirPalabra(palabra);
+   
+                System.out.println("Palabra invertida: " + palabraInvertida);
             }
         }
     
-        public static String invertirTexto(String texto) {
-            StringBuilder sb = new StringBuilder(texto);
-            return sb.reverse().toString();
+        public static String invertirPalabra(String palabra) {
+            char[] caracteres = palabra.toCharArray();
+            String resultado = "";
+    
+            for (int i = caracteres.length - 1; i >= 0; i--) {
+                resultado += caracteres[i];
+            }
+    
+            return resultado;
         }
     }
     
-
-    
-
