@@ -1,10 +1,10 @@
-package edu.saul.hernandez.actividades.actividad2.ui;
+package edu.saul.hernandez.actividades.actividad2.data;
 
-public class datas {
+public class Datas {
     private String name;
     public static String[] nombres= {"Marco", "Pepe", "Toño", "Chris", "Saul"};
 
-    public Data(String name) {
+    public Datas(String name) {
         this.name = name;
     }
 

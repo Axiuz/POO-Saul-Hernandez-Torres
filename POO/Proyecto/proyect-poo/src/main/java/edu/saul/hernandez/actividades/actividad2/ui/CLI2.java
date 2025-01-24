@@ -1,19 +1,21 @@
 package edu.saul.hernandez.actividades.actividad2.ui;
 
-public class CLI2 {
+import edu.saul.hernandez.actividades.actividad2.process.Nombre;
+import edu.saul.hernandez.actividades.actividad2.process.Numero;
 
 import java.util.Scanner;
 
-    public class CLI2 {
+public class CLI2 {
+
 
         public static void showChat(){
-            System.out.println("╔══════════════════════════════╗");
-            System.out.println("║            MENÚ              ║");
-            System.out.println("╠══════════════════════════════╣");
-            System.out.println("║ 1. Validador de nombres      ║");
-            System.out.println("║ 2. Números                   ║");
-            System.out.println("║ 3. Exit                      ║");
-            System.out.println("╚══════════════════════════════╝");
+            System.out.println("┌------------------------------┐");
+            System.out.println("|            MENÚ              |");
+            System.out.println("|------------------------------|");
+            System.out.println("| 1. Validador de nombres      |");
+            System.out.println("| 2. Repetidor de Números      |");
+            System.out.println("| 3. Salir                     |");
+            System.out.println("└------------------------------┘");
         }
 
         public static void runApp(){
@@ -22,23 +24,27 @@ import java.util.Scanner;
             int opcion = scanner.nextInt();scanner.nextLine();
             while(opcion!=3){
                 switch (opcion) {
-                    case 1 -> {
+                    case 1:
                         System.out.println("\nPon un nombre: \n");
                         String name =scanner.nextLine();
-                        if(NameValidator.validateName(name)){
+                        if(Nombre.validateName(name)){
                             System.out.println("Ya existe \n");
                         }else{
                             System.out.println("Nosta \n");
+
                         }
-                    }
-                    default -> {
-                    }
+                        break;
+                    case 2:
+                        System.out.println("Los pares son:");
+                        Numero.Numeros();
+                        break;
+                    default:
+                        System.out.println("no valido");
+                        break;
                 }
-                showChat();
-                opcion = scanner.nextInt();scanner.nextLine();
             }
         }
 
     }
 
-}
+
