@@ -1,4 +1,4 @@
-package edu.saul.hernandez.ACTIVIDADES.actividad2.models;
+package edu.saul.hernandez.actividades.actividad2.models;
 
 public class Nombre {
 

@@ -1,4 +1,4 @@
-package edu.saul.hernandez.ACTIVIDADES.retos;
+package edu.saul.hernandez.actividades.retos;
 
 public class reto3 {
     public static void main(String[] args) {

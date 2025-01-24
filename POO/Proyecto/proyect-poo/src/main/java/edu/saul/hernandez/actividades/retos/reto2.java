@@ -1,4 +1,4 @@
-package edu.saul.hernandez.ACTIVIDADES.retos;
+package edu.saul.hernandez.actividades.retos;
 
 import java.util.HashMap;
 import java.util.Map;
